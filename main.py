@@ -61,7 +61,6 @@ class Mentor:
 class Lecturer(Mentor):
     def estimation(self):
         for i in self.grades_student.values():
-            print(i, 'заебал')
             self.ocenka = sum(i) / len(i)
         return self.ocenka
 
